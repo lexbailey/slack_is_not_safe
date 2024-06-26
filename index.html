@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
     <head>
-        <title>Slack is not safe</title>
+        <title>Slack is finally somewhat safe</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <style>
             h1 {
@@ -23,83 +23,35 @@
     </head>
     <body>
         <div class="content">
-            <h1>Slack is not safe</h1>
+            <h1>Slack is <span style="text-decoration: line-through;color:grey;">not safe</span> finally somewhat safe</h1>
 
             <div>
                 <h2>Does Slack have a block button yet?</h2>
-                <p>No!</p>
+                <p>Not quite, but it has something really close!</p>
+                <h3>"Hiding" and Reporting</h3>
+                <p>Welcome news what I came across in June 2024: They have now added an option to "hide" a user. This is very similar to how Discord's block feature works, in that it does not entirely block the other user, but it does prevent them from DMing you, and it will hide their identity and messages (but still show a placeholder) in channels that you're both in.</p>
+                <p>There is also a "Report to Slack" button. I have not tried using it yet, but it appears to imply that Slack are now taking some responsibility for their users' safety. This is good news, but it shouldn't have taken this long for it to happen.</p>
+                <img src="placeholder.png" alt="A screenshot of a placeholder message in a Slack channel. The placeholder indicates that a hidden user has sent a message, but it does not identify the user or provide the message content." >
             </div>
 
             <div>
                 <h2>How do I block someone on Slack?</h2>
-                <p>You can't.</p>
+                <p>You can almost completely block someone using the "Hide" feature. Open the profile view for the person you need to block, click the three dots button, then click "Hide &lt;display name&gt;"</p>
+                <img src="safety_buttons.png" alt="A screenshot of the profile viewer sidebar in a Slack workspace. The three-dots menu is open and shows the following options: Copy display name, Share contact, View files, Copy member ID, Copy link to profile, Report to Slack, Hide. The screenshot has been anonymised with the placeholder &lt;display name&gt;" >
             </div>
 
             <div>
-                    <h2>Is Slack doing anything about that?</h2>
-                    <p>Maybe?</p>
-                    <p>There has been some news recently (July 2023) that suggests Slack might be starting to listen. <a href="https://foundation.mozilla.org/en/blog/slack-takes-an-important-step-to-block-abuse/">https://foundation.mozilla.org/en/blog/slack-takes-an-important-step-to-block-abuse/</a></p>
-                    <p>Information about their plans is not detailed, but what I have seen so far suggests that the feature will be much like the Discord block feature in that it will not completely prevent messages from blocked users. It will still indicate that there is a message, but won't show you the content of the message or the identity of the sender. While this is better than nothing, it still falls far short of ideal.</p>
-            </div>
-
-            <div>
-                <h2>What is the problem here?</h2>
+                <h2>What <span style="text-decoration: line-through;color:grey;">is</span> was the problem here?</h2>
+                <p>(This section remains here as a reminder of what the problem was)</p>
                 <p>If you share a Slack workspace with someone who decides to harass you via Slack, the only action you can take to immediately stop them doing it is to stop using that Slack workspace.</p>
                 <p>Sure, you can report them to a workspace admin, but I bet that's gonna take a while, and you'll still have the same problem if all they say is "well this person needs to do their work too, so we can't deactivate their account."</p>
                 <p>Ultimately, this means that you are not in control of who is allowed to message you on a Slack workspace.</p>
             </div>
 
             <div>
-                <h2>What can I do to help?</h2>
-                <p>If you're in a Slack workspace, use the /feedback command in the message box to send feedback to Slack directly. Tell them that you don't feel safe without a block button.</p>
-                <p>If you're able to influence the decision makers at your company that uses Slack: tell them that they should look for other platforms that have block buttons.</p>
-                <p>Boycott Slack at work if you can. List an alternative contact method in your profile, then log out of Slack on all your devices.</p>
-                <p>Report the slack android app to Google for violating the <a href="https://support.google.com/googleplay/android-developer/answer/9876937">Google Play Developer Policy for apps with user generated content</a>, which requires apps like Slack to have a block feature. To do this you need to know the app's ID which is "com.Slack", and complete <a href="https://support.google.com/googleplay/android-developer/contact/policy_violation_report">the report form</a> stating that the violation is of the "Restricted Content" category, and the "User Generated Content" type.</p>
-                <p>Report the Slack iOS app to Apple for violating the <a href="https://developer.apple.com/app-store/review/guidelines/">App Store Review Guidelines</a>, which has similar requirements to the Google Play policy. If you have previously installed the Slack app from the App Store then you can make your report with <a href="https://reportaproblem.apple.com/">this form</a>. Otherwise you will need to contact Apple by some other means to make this report.</p>
-                <p>If you have a story that you're comfortable sharing, get in touch, I'd like to publish some anonymous accounts of how this missing feature causes harm. email me: slack-not-safe {at} lexbailey (dot) me</p>
-                <p>You can also sign this petition: <a href="https://www.coworker.org/petitions/slack-add-a-block-button-to-protect-victims-of-harassment">https://www.coworker.org/petitions/slack-add-a-block-button-to-protect-victims-of-harassment</a>
-                <p>The same petition on mozilla's website: <a href="https://foundation.mozilla.org/en/campaigns/petition-slack-block-abuse/">https://foundation.mozilla.org/en/campaigns/petition-slack-block-abuse/</a>
-            </div>
-
-            <div>
-                <h2>Is Mattermost better?</h2>
-                <p>No. Mattermost behaves in the same way as slack. There is no block button.</p>
-            </div>
-
-            <div>
-                <h2>But you can mute people on Slack, why not just do that?</h2>
-                <p>Yes, but this doesn't prevent them contacting you. If they send you a DM then you still get a number bubble by their name, and unless you read the message then you have a constant reminder that this person exists and wants to harass you. The harasser has won in this case. Mattermost does the same thing and shows you the number bubble regardless of mute. You will also still see their messages in channels that you're both in, and they will be able to read yours. This is no substitute for a block feature.</p>
-            </div>
-
-            <div>
-                <h2>Which other enterprise communication systems have block buttons?</h2>
-                <p>Rocket.chat does, Zoom does, Google chat does.</p>
-                <p>Zulip has a user mute button, which as far as I can tell does what I would expect a block button to do.</p>
-                <p>There is also Discord, which is not marketed for enterprise, but does have a block button. Note that there is currently a bug that prevents you from effectively blocking bot users, so anyone who can control a bot in a Discord server is able to evade a block. Some Discord servers use bots to bridge to other messaging services, and thus you can't block anyone on the bridged services, because of this bug. There is also another problem with Discord's blocking feature: It still notifies you of messages from the blocked users in servers that you share with them according your notification settings for the channel they post in. Instead of showing you the messages it will show "n blocked messages". There is currently no option to prevent notification dots and "n blocked messages" notices.</p>
-            </div>
-
-            <div>
-                <h2>This sounds familiar</h2>
-                <p>Maybe you're thinking of when they made the problem even worse.</p>
-                <p><a href="https://www.theverge.com/2021/3/24/22348422/slack-connect-direct-message-abuse-harassment">https://www.theverge.com/2021/3/24/22348422/slack-connect-direct-message-abuse-harassment</a></p>
-<p><a href="https://www.forbes.com/sites/rachelsandler/2021/03/24/slack-admits-it-made-a-mistake-after-users-said-its-new-dm-feature-could-enable-harassment/">https://www.forbes.com/sites/rachelsandler/2021/03/24/slack-admits-it-made-a-mistake-after-users-said-its-new-dm-feature-could-enable-harassment/</a></p>
-<p><a href="https://uk.pcmag.com/communications/132437/slack-quickly-rethinks-dm-feature-due-to-abuse-and-harassment-concerns">https://uk.pcmag.com/communications/132437/slack-quickly-rethinks-dm-feature-due-to-abuse-and-harassment-concerns</a></p>
-<p><a href="https://mashable.com/article/slack-connect-dm-invite-harassment-concerns">https://mashable.com/article/slack-connect-dm-invite-harassment-concerns</a></p>
-<p><a href="https://arstechnica.com/information-technology/2021/03/slack-promises-to-update-easy-to-abuse-connect-dm-feature/">https://arstechnica.com/information-technology/2021/03/slack-promises-to-update-easy-to-abuse-connect-dm-feature/</a></p>
-<p><a href="https://blog.malwarebytes.com/security-world/2021/03/slack-hurries-to-fix-direct-message-flaw-that-allowed-harassment/">https://blog.malwarebytes.com/security-world/2021/03/slack-hurries-to-fix-direct-message-flaw-that-allowed-harassment/</a></p>
-                <p>The problem is still there. Perhaps it's back to just being internal to workspaces, but it's still a huge problem.</p>
-            </div>
-
-            <div>
-                <h2>What's Slack's official word on the matter?</h2>
-                <p>They haven't made direct comments on harassment risk outside of what the news articles above have reported on, plus insubstantial tweet replies, but they do have a webpage explaining that the responsibility for this is delagated to their customers, effectively taking no responsibility for the safety of their users.</p>
-                <a href="https://slack.com/intl/en-gb/reporting-workspace-conduct">https://slack.com/intl/en-gb/reporting-workspace-conduct</a>
-            </div>
-    
-            <div>
-                <h2>I work for Slack and want to discuss this with you</h2>
-                <p>Great! Get in touch.</p>
-                <p>email me: slack-not-safe {at} lexbailey (dot) me</p>
+                <h2>Slack took a long time to deal with this</h2>
+                <p>Slack really should have implemented these features sooner. It should not have taken this long to get basic safety features implemented. Thankyou to everyone that helped put pressure on Slack to force them to deal with this. I hope that anyone else building communication tools learns from Slack's mistakes here, and keeps user safety as a high priority.</p>
+                <p>If you still want an alternative to Slack that does this well, consider Rocket.chat, Zoom, or Zulip. All of these have had better or equal safety features than Slack for longer than Slack has had them.</p>
             </div>
 
             <div>
